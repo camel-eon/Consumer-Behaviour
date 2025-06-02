@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Titan One;
+    src: url(font/TitanOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Work SansB;
+    src: url(font/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Work SansR;
+    src: url(font/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Work SansM;
+    src: url(font/WorkSans-Medium.ttf);
+}
+
+h1 {
+    font-family: "Titan One";
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.innerWrapperTop {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.innerWrapperBottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.innerWrapperTop div, .innerWrapperBottom div {
+    border: black 2px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#con {
+    border-radius: 20px;
+    height: 150px;
+}
+
+#su {
+    border-radius: 80px;
+    height: 200px;
+}
+
+#mer {
+    border-radius: 20px;
+    height: 100px;
+}
+
+#be {
+    border-radius: 80px;
+    height: 150px;
+}
+
+#ha {
+    border-radius: 10px;
+    height: 80px;
+}
+
+#vior {
+    border-radius: 20px;
+    height: 120px;
+}
