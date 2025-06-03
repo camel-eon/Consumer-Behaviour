@@ -1,0 +1,35 @@
+
+
+@font-face {
+    font-family: Titan One;
+    src: url(font/TitanOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Work SansB;
+    src: url(font/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Work SansR;
+    src: url(font/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Work SansM;
+    src: url(font/WorkSans-Medium.ttf);
+}
+
+h1 {
+    font-family: "Titan One";
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+}
+

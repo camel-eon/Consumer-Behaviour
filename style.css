@@ -36,26 +36,30 @@ main {
     min-width: 30vw;
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .innerWrapperTop {
     display: flex;
     align-items: end;
     justify-content: center;
+    gap: 5px;
 }
 
 .innerWrapperBottom {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    gap: 5px;
 }
 
 .innerWrapperTop div, .innerWrapperBottom div {
-    border: black 2px solid;
+    border: black 3px solid;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #con {
@@ -86,4 +90,9 @@ main {
 #vior {
     border-radius: 20px;
     height: 120px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
