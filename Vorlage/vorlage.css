@@ -2,34 +2,60 @@
 
 @font-face {
     font-family: Titan One;
-    src: url(font/TitanOne-Regular.ttf);
+    src: url(../font/TitanOne-Regular.ttf);
 }
 
 @font-face {
     font-family: Work SansB;
-    src: url(font/WorkSans-Bold.ttf);
+    src: url(../font/WorkSans-Bold.ttf);
 }
 
 @font-face {
     font-family: Work SansR;
-    src: url(font/WorkSans-Regular.ttf);
+    src: url(../font/WorkSans-Regular.ttf);
 }
 
 @font-face {
     font-family: Work SansM;
-    src: url(font/WorkSans-Medium.ttf);
+    src: url(../font/WorkSans-Medium.ttf);
 }
 
 h1 {
     font-family: "Titan One";
-    font-size: 70px;
+    font-size: 2.5em;
     margin: 0;
     text-align: center;
+
 }
 
 nav {
     display: flex;
     flex-direction: row;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h2, p{
+    border: black 3px solid;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+h2{
+    font-family: "Work SansM";
+    font-size: 1em;
+    width: 150px;
+}
+
+main {
+    padding: 0 50px;
+}
+
+#introduction h2 {
 
 }
 
