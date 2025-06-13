@@ -1,4 +1,4 @@
-
+/* TODO : FONTS */
 
 @font-face {
     font-family: Titan One;
@@ -19,6 +19,9 @@
     font-family: Work SansM;
     src: url(../font/WorkSans-Medium.ttf);
 }
+
+/* TODO: FARBEN */
+
 
 * {
     box-sizing: border-box;
@@ -42,6 +45,14 @@ h1 {
     background-color: white;
 }
 
+.h1Wrapper {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 100px; /* Platz für das angedockte Feld */
+}
+
+/* Das Icon bei der Überschrift */
 .h1Wrapper::before {
     content: "🎮";
     font-size: 48px;
@@ -51,8 +62,8 @@ h1 {
     line-height: 80px;         /* vertikal zentrieren */
     text-align: center;        /* horizontal zentrieren */
     position: relative;
-    top: 40px;
-    left: -20px;
+    top: 50px;
+    left: -30px;
     background-color: darkgrey;
     border: 2px solid black;
     border-radius: 50%;
@@ -60,11 +71,17 @@ h1 {
 
 
 nav {
-    display: flex;
     border: 2px solid black;
-    position: sticky;
+    position: fixed;
+    top: 0;
     background-color: white;
-    margin-bottom: 50px;
+    z-index: 1000;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul{
@@ -93,10 +110,9 @@ li {
 
 h2{
     font-family: "Work SansM";
-    font-size: 1em;
+    font-size: 1.5em;
     border: 2px solid black;
     width: fit-content;
-    margin: auto;
     padding: 10px 30px;
     border-radius: 35px;
     background-color: dimgrey;
@@ -104,24 +120,88 @@ h2{
 }
 
 main {
-    padding: 0 50px;
+    padding: 120px 50px;
 }
 
-.textfeldFull {
-    width: 95vw;
+/*Styling für mittige Überschrift (z.b. bei Einleitung/Vergleich */
+.ueberschriftMittig{
+    margin: 0 auto -30px auto;
+    z-index: 1;
+    position: relative;
+}
+
+/*Styling für linksbündige Überschrift (z.b. bei REFERENCES / TITEL + Inhalt */
+.ueberschriftLinks{
+    margin: 0 0 -30px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.basedOn {
+    position: absolute;
+    bottom: 35px;
+    right: -40px;
+    width: 600px;
+    background-color: white;
+    padding: 15px 20px;
+    border: 2px solid black;
+    border-radius: 35px;
+    font-family: "Work SansR";
+    font-size: 0.9em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.basedOn::after {
+    /*für das Icon dann*/
+}
+
+/*Todo: Styling für Baustein: VERGLEICH*/
+
+.textFeldVergleichWrapper {
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    position: relative;
+}
+
+.textfeldVergleich {
+    width: 46.5vw;
     background-color: white;
     padding: 20px;
     border: 2px solid black;
     border-radius: 35px;
 }
 
-.textfeldHalfWrapper {
+/*Todo: Styling für Baustein: EINLEITUNG*/
+
+.textFeldEinleitungWrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    z-index: 0;
+    position: relative;
+
 }
 
-.textfledHalf {
-    width: 45vw;
+.textFeldEinleitung {
+    width: 100vw;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
+/*Todo:Styling für Baustein: References + Name Ersteller*/
+
+.textFeldConclusionWrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    position: relative;
+
+}
+
+.textFeldConclusion {
+    width: 100vw;
     background-color: white;
     padding: 20px;
     border: 2px solid black;
