@@ -32,26 +32,32 @@ body {
 
 h1 {
     font-family: "Titan One";
-    font-size: 2.5em;
+    font-size: 2.7em;
     text-align: center;
     border: 2px solid black;
-    width: 70vw;
+    width: 90vw;
     margin: auto;
-    padding: 20px;
+    padding: 50px;
     border-radius: 35px;
     background-color: white;
 }
 
 .h1Wrapper::before {
-    width: 50px;
-    height: 50px;
+    content: "🎮";
+    font-size: 48px;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    line-height: 80px;         /* vertikal zentrieren */
+    text-align: center;        /* horizontal zentrieren */
+    position: relative;
+    top: 40px;
+    left: -20px;
     background-color: darkgrey;
     border: 2px solid black;
-    position: relative;
-    top: 35px;
-    left: 85px;
     border-radius: 50%;
 }
+
 
 nav {
     display: flex;
