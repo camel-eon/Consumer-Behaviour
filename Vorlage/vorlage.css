@@ -220,6 +220,30 @@ main {
 
 }
 
+
+/*Todo:Styling für Baustein: Methodology */
+#methodology h2 {
+    margin: 0 0 -25px 20px; /* leicht überlappend nach oben */
+    z-index: 2;
+    position: relative;
+}
+
+.textFeldMethodologyWrapper {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    position: relative;
+    margin-top: 30px; /* Abstand zum vorherigen Element */
+}
+
+.textFeldMethodology {
+    width: 100vw;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
 .textFeldConclusion {
     width: 100vw;
     background-color: white;
@@ -229,12 +253,176 @@ main {
 }
 
 
-@media screen and (max-width: 768px) {
+/*Todo:Styling für Baustein: Aufzählungen */
+.aufzaehlung-section {
+    margin: 50px 0;
+    background: white;
+    border-radius: 35px;
+    padding: 30px;
+    border: 2px solid black;
+}
 
-    main {
-        padding: 180px 50px 80px 50px;
-    }
+.callout-header {
+    background: dimgrey;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-family: "Work SansB", Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid black;
+    position: relative;
+}
 
+.callout-header::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.aufzaehlung-intro {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    font-family: "Work SansR", Arial, sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+.aufzaehlung-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aufzaehlung-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+}
+
+.aufzaehlungsPunkt {
+    content: "▶";
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.aufzaehlung-inhalt {
+    background: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    font-family: "Work SansR", Arial, sans-serif;
+    color: black;
+    line-height: 1.5;
+    flex: 1;
+}
+
+/*Todo:Styling für Baustein: QUESTIONSr*/
+#frageAntwort {
+    padding: 80px 0;
+}
+
+.ueberschriftMittig {
+    margin: 0 auto -30px auto;
+    z-index: 2;
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 35px;
+    background-color: dimgrey;
+    color: white;
+    font-family: "Work SansM";
+    font-size: 1.5em;
+    border: 2px solid black;
+    text-align: center;
+
+    top: -10px;
+}
+
+
+.frageAntwortWrapper {
+    background-color: white;
+    border-radius: 70px;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.speechBubble {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 35px;
+    padding: 30px;
+    max-width: 90%;
+    font-size: 1.4rem;
+    position: relative;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leftBubble {
+    align-self: flex-start;
+    margin-left: 30px;
+}
+
+.rightBubble {
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.leftBubble::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    z-index: 0;
+}
+
+.rightBubble::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    z-index: 0;
+}
+
+
+
+ main {
+padding: 180px 50px  80px 50px;
+ }
     .h1Wrapper {
         position: relative;
         padding-bottom: 0; /* weil wir die Box leicht überlappen lassen */
@@ -281,4 +469,4 @@ main {
         z-index: 2;
 
     }
-}
+
