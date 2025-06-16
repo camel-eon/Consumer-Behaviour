@@ -7,29 +7,65 @@
 </head>
 <body>
     <header>
-        <nav>
-
+        <nav class="desktopNav">
+            <ul>
+                <li class="navLi"><a href="index.html"><img src="img/cbLogo.png" alt="logo"></a></li>
+                <li class="navLi navHover"><a href="#">Home</a></li>
+                <li class="navLi navHover"><a href="#about">About CB</a></li>
+                <li class="navLi navHover"><a href="#team">Team</a></li>
+                <li class="navLi navHover"><a href="#footer">Contact</a></li>
+            </ul>
         </nav>
     </header>
     
     <main>
-        <div><a href="Vorlage/vorlage.html"><h2>Vorlage</h2></a></div>
-        <div class="wrapper">
-            <div class="innerWrapperTop">
-                <div id="con"><h1>Con</h1></div>
-                <div id="su"><h1>su</h1></div>
-                <div id="mer"><h1>mer</h1></div>
+        <section class="hero">
+            <div class="pills" id="uxDesign"><a href="Vorlage/vorlage.html"><h2>UX Design</h2></a></div>
+            <div class="pills" id="brandLoyalty"><a href="Brand%20Loyalty/brandLoyalty.html"><h2>Brand Loyalty</h2></a></div>
+            <div class="pills" id="storytelling"><a href="Storytelling/storytelling.html"><h2>Storytelling</h2></a></div>
+            <div class="pills" id="productDesign"><a href="Product%20Design/productDesign.html"><h2>Product Design</h2></a></div>
+            <div class="pills" id="psychologicalFactors"><a href="Psychological%20Factors/psychologicalFactors.html"><h2>Psychological Factors</h2></a></div>
+            <div class="pills" id="buyingHabits"><a href="Buying%20Habits/buyingHabits.html"><h2>Buying Habits</h2></a></div>
+            <div class="pills" id="functionalDesign"><a href="Functional%20Design/functionalDesign.html"><h2>Functional Design</h2></a></div>
+            <div class="pills" id="gamification"><a href="Gamification/gamification.html"><h2>Gamification</h2></a></div>
+
+            <div class="wrapper">
+                <div class="innerWrapperTop">
+                    <div id="con"><h1>Con</h1></div>
+                    <div id="su"><h1>su</h1></div>
+                    <div id="mer"><h1>mer</h1></div>
+                </div>
+                <div class="innerWrapperBottom">
+                    <div id="be"><h1>be</h1></div>
+                    <div id="ha"><h1>ha</h1></div>
+                    <div id="vior"><h1>vior</h1></div>
+                </div>
             </div>
-            <div class="innerWrapperBottom">
-                <div id="be"><h1>be</h1></div>
-                <div id="ha"><h1>ha</h1></div>
-                <div id="vior"><h1>vior</h1></div>
+        </section>
+
+        <section class="content">
+            <div class="contentInnerWrapper">
+                <h3 id="about">About Consumer Behavior</h3>
+
+                <p>Consumer behavior refers to the study of how individuals
+                    , groups, or organizations select, purchase, use, and dispose
+                    of goods, services, ideas, or experiences. It involves
+                    understanding the decision-making processes that influence
+                    buying habits, including psychological, social, and cultural
+                    factors. Marketers analyze consumer behavior to identify needs
+                    and preferences, allowing them to develop effective marketing
+                    strategies. Trends in consumer behavior are constantly evolving
+                    due to technology, lifestyle changes, and economic conditions,
+                    making it essential for businesses to stay informed and adaptable.</p>
             </div>
-        </div>
+            <img id="aboutCbImage" src="img/cbImage.jpg" alt="bild über consumer behavior">
+            </section>
+
     </main>
     
-    <footer>
-
+    <footer id="footer">
+        <p>Quellen: StatistaBehavioral, Economics, NNGroup</a></p>
+        <p>Kontakt: kontakt@consumerbehavior.com</p>
     </footer>   
     
     <script src="script.js"></script>

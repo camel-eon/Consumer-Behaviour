@@ -18,6 +18,11 @@
     src: url(font/WorkSans-Medium.ttf);
 }
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: "Titan One";
     font-size: 70px;
@@ -25,32 +30,133 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Work SansM";
+    font-size: 20px;
+}
+
+h3 {
+    margin: 0 auto -30px auto;
+    z-index: 10;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 35px;
+    background-color: dimgrey;
+    color: white;
+    font-family: "Work SansM";
+    font-size: 1.5em;
+    border: 2px solid black;
+    text-align: center;
+}
+
+main p {
+    background-color: white;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 35px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 main {
+    margin: 0;
+    padding-bottom: 150px;
+}
+
+.hero {
+    background-color: darkgrey;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0 0 150px 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 200px;
+    padding: 0 50px;
+}
+
+.contentInnerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#aboutCbImage {
+    width: 30%;
+    height: auto;
+}
+
+nav {
+    border: 2px solid black;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    font-family: "Work SansB";
+    font-size: 1.2em;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.navLi {
+    list-style: none;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 35px;
+    width: fit-content;
+}
+
+.desktopNav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navHover:hover {
+    background-color: darkgrey;
+    outline: 2px solid black;
+    color: white;
 }
 
 .wrapper {
     min-width: 30vw;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0;
 }
 
 .innerWrapperTop {
     display: flex;
     align-items: end;
     justify-content: center;
-    gap: 5px;
+    gap: 0;
 }
 
 .innerWrapperBottom {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 5px;
+    gap: 0;
 }
 
 .innerWrapperTop div, .innerWrapperBottom div {
@@ -59,7 +165,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: -1.5px;
+    background-color: white;
 }
 
 #con {
@@ -95,4 +202,83 @@ main {
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.pills {
+    border: 3px black solid;
+    border-radius: 35px;
+    position: absolute;
+    padding: 15px 50px;
+    background-color: white;
+    transition: transform 0.5s;
+}
+
+.pills:hover {
+    transform: scale(1.05);
+}
+
+#uxDesign {
+    bottom: 50px;
+    left: 400px;
+}
+
+#brandLoyalty {
+    top: 200px;
+    right: 100px;
+}
+
+#storytelling {
+    margin: auto;
+    right: 50px;
+}
+
+#productDesign {
+    bottom: 200px;
+    right: 100px;
+}
+
+#psychologicalFactors {
+    bottom: 50px;
+    right: 400px;
+}
+
+#buyingHabits {
+    bottom: 200px;
+    left: 100px;
+}
+
+#functionalDesign {
+    margin: auto;
+    left: 50px;
+}
+
+#gamification {
+    top: 200px;
+    left: 100px;
+}
+
+.pills::before {
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+footer {
+    background-color: darkgrey;
+    color: #292929;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Work SansR';
+    font-size: 14px;
+    border-top: 2px solid black;
 }
