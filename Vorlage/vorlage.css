@@ -47,6 +47,7 @@
 /*ALLGEMEINES*/
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -61,6 +62,7 @@ body {
 
 section {
     margin: 25px 50px;
+    scroll-margin-top: 150px; /*damit navbar nicht Inhalt überdeckt, bei Klicken der Verlinkung in navbar*/
 }
 
 main {
@@ -74,10 +76,9 @@ main section p {
 }
 
 /*für Bilder*/
-img{
+section img{
     max-width: 100%;
     border-radius: 35px;
-
 }
 
 /*ÜBERSCHRIFTEN*/
@@ -85,8 +86,8 @@ h1 {
     font-family: "Titan One";
     font-size: 2.7em;
     text-align: center;
-    border: 3px solid var(--border-color);
-    width: 90vw;
+    border: 4px solid var(--border-color);
+    width: fit-content;
     margin: auto;
     padding: 50px;
     border-radius: 35px;
@@ -136,7 +137,7 @@ nav {
 
 .navHover:hover {
     background-color: var(--navbar-highlights-color);
-    outline: 3px solid var(--navbar-highlight-border-color);
+    outline: 4px solid var(--navbar-highlight-border-color);
     color: white;
 }
 
@@ -196,7 +197,7 @@ li {
     top: 50px;
     left: -30px;
     background-color: var(--inhalt-hintergrund-color);
-    border: 3px solid var(--border-color);
+    border: 4px solid var(--border-color);
     border-radius: 50%;
 }
 
@@ -208,7 +209,7 @@ li {
     width: 40vw;
     background-color: var(--navbar-color);
     padding: 20px 20px;
-    border: 3px solid black;
+    border: 4px solid var(--border-color);
     border-radius: 35px;
     font-size: 0.9em;
 }
@@ -220,14 +221,12 @@ li {
     right: -20px;
     width: 70px;
     height: 70px;
-    border: 3px solid black;
+    border: 4px solid var(--border-color);
     border-radius: 50%;
     background-color: var(--background-userIcon);
-    /* um ein Bild einzufügen
-    background-image: url(pfad/zum/bild.png);
+    background-image: url(../img/userIcon.png);
     background-size: cover;
     background-position: center;
-     */
 }
 
 
