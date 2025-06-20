@@ -64,13 +64,20 @@ section {
 }
 
 main {
-    padding: 50px;
+    padding: 100px 50px 50px 50px;
 }
 
 /*font-size + line-height für GESAMTES Dokument ändern*/
 main section p {
     line-height: 1.3em;
     font-size: 1.3em;
+}
+
+/*für Bilder*/
+img{
+    max-width: 100%;
+    border-radius: 35px;
+
 }
 
 /*ÜBERSCHRIFTEN*/
