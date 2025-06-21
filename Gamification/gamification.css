@@ -1,0 +1,7 @@
+section > h2:last-child {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: left;
+}
