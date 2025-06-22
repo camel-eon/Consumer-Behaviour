@@ -1,0 +1,574 @@
+/* FONTS */
+
+@font-face {
+    font-family: Titan One;
+    src: url(../font/TitanOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Work SansB;
+    src: url(../font/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Work SansR;
+    src: url(../font/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Work SansM;
+    src: url(../font/WorkSans-Medium.ttf);
+}
+
+/*FARBEN */
+
+:root{
+    /*Hintergrundfarbe für ganzes Dokument*/
+    --background-color: #D9D9D9;
+    --background-gradient: linear-gradient(to bottom, rgba(194, 255, 254, 0.41), rgba(0, 131, 128, 0.41));
+
+    /*Navbar-Farben*/
+    --navbar-color: #FFF1F5;
+    --navbar-highlights-color: rgba(0, 209, 204, 0.72);
+    --navbar-highlight-border-color: #004F4D;
+
+    /*Inhalte der Seite*/
+    --border-color: #004F4d;
+    --untertitel-color: #00908D;
+    --inhalt-hintergrund-color: white;
+
+    /*Hintergrund der User-Icons am Beginn und Ende der Seite*/
+    --background-userIcon: #FFC2E0;
+
+}
+
+
+
+/*ALLGEMEINES*/
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background:
+        var(--background-gradient),
+        var(--background-color);
+    font-family: "Work SansR";
+    height: 100%;
+}
+
+section {
+    margin: 25px 50px;
+    scroll-margin-top: 150px; /*damit navbar nicht Inhalt überdeckt, bei Klicken der Verlinkung in navbar*/
+}
+
+main {
+    padding: 100px 50px 50px 50px;
+}
+
+/*font-size + line-height für GESAMTES Dokument ändern*/
+main section p {
+    line-height: 1.3em;
+    font-size: 1.3em;
+}
+
+/*für Bilder*/
+section img{
+    max-width: 100%;
+    border-radius: 35px;
+}
+
+/*ÜBERSCHRIFTEN*/
+h1 {
+    font-family: "Titan One";
+    font-size: 2.7em;
+    text-align: center;
+    border: 4px solid var(--border-color);
+    width: fit-content;
+    margin: auto;
+    padding: 50px;
+    border-radius: 35px;
+    background-color: var(--inhalt-hintergrund-color);
+}
+
+h2{
+    font-family: "Work SansM";
+    font-size: 1.5em;
+    border: 3px solid var(--border-color);
+    width: fit-content;
+    border-radius: 35px;
+    background-color: var(--untertitel-color);
+    color: white;
+    padding: 20px 50px 20px 50px;
+}
+
+h3{
+    font-family: "Work SansM";
+    font-size: 1.3em;
+}
+
+/*Styling für mittige Überschrift (z.b. bei Einleitung/Vergleich */
+.ueberschriftMittig{
+    margin: 0 auto -30px auto;
+    z-index: 1;
+    position: relative;
+}
+
+/*Styling für linksbündige Überschrift (z.b. bei REFERENCES / TITEL + Inhalt */
+.ueberschriftLinks{
+    margin: 0 0 -30px 0;
+    z-index: 1;
+    position: relative;
+}
+
+
+/*NAV-BAR*/
+nav {
+    background-color: var(--navbar-color);
+    border: 2px solid black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    font-family: "Work SansB";
+    font-size: 1.2em;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navHover:hover {
+    background-color: var(--navbar-highlights-color);
+    outline: 4px solid var(--navbar-highlight-border-color);
+    color: white;
+}
+
+.navLi {
+    list-style: none;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 35px;
+    width: fit-content;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    margin: 0;
+}
+
+li p {
+    font-family: "Work SansB";
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    margin: auto;
+    padding: 10px;
+    border-radius: 35px;
+}
+
+
+.desktopNav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/*STYLING TITEL + basedOn*/
+.h1Wrapper {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+/* Das Icon bei der Überschrift */
+.h1Wrapper::before {
+    content: "💻";
+    font-size: 48px;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: -30px;
+    background-color: var(--inhalt-hintergrund-color);
+    border: 4px solid var(--border-color);
+    border-radius: 50%;
+}
+
+/*Styling für das BasedOn im Titel drin: Name vom Originalen Paper*/
+.basedOn {
+    position: absolute;
+    bottom: 10px;
+    right: -25px;
+    width: 40vw;
+    background-color: var(--navbar-color);
+    padding: 20px 20px;
+    border: 4px solid var(--border-color);
+    border-radius: 35px;
+    font-size: 0.9em;
+}
+
+.basedOn::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -20px;
+    width: 70px;
+    height: 70px;
+    border: 4px solid var(--border-color);
+    border-radius: 50%;
+    background-color: var(--background-userIcon);
+    background-image: url(../img/userIcon.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*STYLING FÜR BAUSTEIN: EINLEITUNG*/
+.textFeldEinleitungWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--inhalt-hintergrund-color);
+    padding: 2em 6em 2em 2em;
+    border: 4px solid var(--untertitel-color);
+    border-radius: 35px;
+    gap: 1em;
+}
+
+.einleitungLinks {
+    flex: 1;
+    text-align: left;
+    line-height: 1.4em;
+}
+
+.einleitungLinks p {
+    margin-bottom: 1em;
+}
+
+.einleitungRechts img {
+    width: 25vw;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/*STYLING FÜR BAUSTEIN: QUESTIONS*/
+.frageAntwortWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+
+    padding: 0 3em 3em 3em;
+    position: relative;
+    z-index: 0;
+    gap: 40px;
+}
+
+
+.questionsBubble {
+    color: black;
+    max-width: 80vw;
+    text-align: center;
+}
+.bubbleLeft {
+    /*Breite der linken Bubble*/
+    max-width: 70vw;
+    align-self: flex-start;
+
+    /* triangle dimension */
+    --b: 1em; /* control the base */
+    --h: .7em; /* control the height */
+    --c: var(--inhalt-hintergrund-color); /* controls color of bubble*/
+
+
+    padding: 1em;
+    border-radius: 1.2em;
+    clip-path: polygon(0 0,100% 0,100% 100%,
+    var(--b) 100%,
+    calc(-1*var(--h)) calc(100% + var(--h)),
+    0 calc(100% - var(--b)));
+    background: var(--c);
+    border-image: conic-gradient(var(--c) 0 0) 0 0 999 999/
+    0 0 calc(var(--h) + var(--b)) calc(var(--h) + var(--b))/0 0 var(--h) var(--h);
+}
+
+.bubbleRight {
+    /*Breite der rechten Bubble*/
+    max-width: 70vw;
+    align-self: flex-end;
+    /* triangle dimension */
+    --b: 1em; /* control the base */
+    --h: .7em; /* control the height */
+    --c: var(--inhalt-hintergrund-color);; /* controls color of bubble*/
+
+    padding: 1em;
+    border-radius: 1.2em;
+    clip-path: polygon(100% 0,0 0,0 100%,
+    calc(100% - var(--b)) 100%,
+    calc(100% + var(--h)) calc(100% + var(--h)),
+    100% calc(100% - var(--b)));
+    background: var(--c);
+    border-image: conic-gradient(var(--c) 0 0) 0 999 999 0/
+    0 calc(var(--h) + var(--b)) calc(var(--h) + var(--b)) 0/0 var(--h) var(--h) 0;
+}
+
+
+/*STYLING FÜR BAUSTEIN: METHODOLOGY */
+.methodologyWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2em;
+    border: 4px solid var(--untertitel-color);
+    border-radius: 35px;
+    background-color: var(--inhalt-hintergrund-color);
+    z-index: 0;
+}
+
+
+
+/*STYLING FÜR BAUSTEIN: VERGLEICH*/
+.vergleichUeberschriftWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.uberschriftVergleich{
+    margin-bottom: -50px;
+    z-index: 1;
+}
+
+.VergleichWrapper {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    z-index: 0;
+    position: relative;
+}
+
+.textfeldVergleich {
+    background-color: var(--inhalt-hintergrund-color);
+    width: 45vw;
+    padding: 2em;
+    border: 4px solid var(--untertitel-color);
+    border-radius: 35px;
+}
+
+.textfeldVergleich em{
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+.textfeldVergleich img {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+/*STYLING FÜR LEARNINGS*/
+.learningWrapper {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2em;
+    border: 4px solid var(--untertitel-color);
+    border-radius: 35px;
+    background-color: var(--inhalt-hintergrund-color);
+    z-index: 0;
+}
+
+.learning{
+    margin-top: -40px;
+}
+
+
+/*STYLING FÜR BAUSTEIN: AUFZÄHLUNGEN */
+.aufzaehlungWrapper {
+    display: flex;
+    justify-content: left;
+    z-index: 0;
+    position: relative;
+    padding: 2em;
+    border: 4px solid var(--untertitel-color);
+    border-radius: 35px;
+    background-color: var(--inhalt-hintergrund-color);
+}
+
+.textFeldAufzaehlung{
+    display: flex;
+    justify-content: left;
+    z-index: 0;
+    position: relative;
+    padding: 2em;
+    border: 4px solid var(--untertitel-color);
+    border-radius: 35px;
+    background-color: var(--inhalt-hintergrund-color);
+    margin-bottom: 0.1em;
+}
+
+.aufzaehlung{
+    display: flex;
+    align-items: center;
+    max-width: 90vw;
+
+}
+
+.pfeil{
+    width: 2em;
+    height: auto;
+    margin-right: 1em;
+    flex-shrink: 0;
+}
+
+/*STYLING FÜR BAUSTEIN: Conclusion*/
+.textFeldConclusionWrapper {
+    display: flex;
+    justify-content: column;
+    z-index: 0;
+    position: relative;
+    padding: 2em;
+    border: 4px solid var(--untertitel-color);
+    border-radius: 35px;
+    background-color: var(--inhalt-hintergrund-color);
+}
+
+
+
+/*STYLING FÜR BAUSTEIN: References*/
+.textFeldReferencesWrapper {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    z-index: 0;
+    position: relative;
+    padding: 2em;
+    border: 4px solid var(--untertitel-color);
+    border-radius: 35px;
+    background-color: var(--inhalt-hintergrund-color);
+    font-size: 0.9em;
+}
+
+#ersteller{
+    position: absolute;
+    bottom: -50px;
+    right: -25px;
+    width: max-content;
+    max-with: 90%;
+    gap: 0.8em;
+    padding: 0.5em 2em;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+
+    border: 4px solid var(--untertitel-color);
+    border-radius: 50px;
+    background-color: var(--inhalt-hintergrund-color);
+    color: black;
+    font-size: 0.9em;
+}
+
+#ersteller img{
+    width: 5em;
+    border-radius: 50%;
+    background-color: var(--background-userIcon);
+}
+
+
+
+
+/*MEDIA QUERY für responsives Design*/
+@media screen and (max-width: 768px) {
+    main {
+        padding: 180px 50px 80px 50px;
+    }
+
+    .h1Wrapper {
+        position: relative;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1Wrapper::before {
+        position: absolute;
+        top: -25px;
+        left: -40px;
+        transform: scale(0.8);
+    }
+
+    h1 {
+        font-size: 1.8em;
+        width: 90vw;
+        padding: 40px 20px;
+    }
+
+    .basedOn {
+        position: relative;
+        top: -10px;
+        width: 85vw;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 35px;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .basedOn::after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: lightgrey;
+        z-index: 2;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .basedOn {
+        width: 90%;
+        padding: 1em;
+        font-size: 0.85em;
+    }
+
+    .basedOn::after {
+        top: -20px;
+        right: 1em;
+        width: 40px;
+        height: 40px;
+    }
+
+    #ersteller {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    #ersteller img {
+        width: 3.5em;
+    }
+}
