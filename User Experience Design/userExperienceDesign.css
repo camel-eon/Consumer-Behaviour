@@ -72,7 +72,7 @@ main {
 /*font-size + line-height für GESAMTES Dokument ändern*/
 main section p {
     line-height: 1.3em;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /*für Bilder*/
@@ -84,10 +84,11 @@ section img{
 /*ÜBERSCHRIFTEN*/
 h1 {
     font-family: "Titan One";
+    font-weight: 500px;
     font-size: 2.7em;
     text-align: left;
     border: 4px solid var(--border-color);
-    width: fit-content;
+    width: 100%;
     margin: auto;
     padding: 50px;
     border-radius: 35px;
