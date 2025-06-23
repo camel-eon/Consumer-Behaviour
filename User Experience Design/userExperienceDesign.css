@@ -84,7 +84,7 @@ section img{
 /*ÜBERSCHRIFTEN*/
 h1 {
     font-family: "Titan One";
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 2.7em;
     text-align: left;
     border: 4px solid var(--border-color);
@@ -365,7 +365,7 @@ li {
 
 .textfeldVergleich {
     background-color: var(--inhalt-hintergrund-color);
-    width: 45vw;
+    width: 50%;
     padding: 2em;
     border: 4px solid var(--untertitel-color);
     border-radius: 35px;
