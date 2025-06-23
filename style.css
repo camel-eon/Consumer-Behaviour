@@ -296,9 +296,18 @@ a{
     left: 400px;
 }
 
+#uxDesign:before {
+    content: "🎨"
+}
+
+
 #brandLoyalty {
     top: 200px;
     right: 100px;
+}
+
+#brandLoyalty:before {
+    content: "🤝"
 }
 
 #storytelling {
@@ -306,9 +315,17 @@ a{
     right: 50px;
 }
 
+#storytelling:before {
+    content: "📖"
+}
+
 #productDesign {
     bottom: 200px;
     right: 100px;
+}
+
+#productDesign:before {
+    content: "🖌️"
 }
 
 #psychologicalFactors {
@@ -316,9 +333,17 @@ a{
     right: 400px;
 }
 
+#psychologicalFactors:before {
+    content: "🧠"
+}
+
 #buyingHabits {
     bottom: 200px;
     left: 100px;
+}
+
+#buyingHabits:before {
+    content: "🛍️"
 }
 
 #functionalDesign {
@@ -326,9 +351,17 @@ a{
     left: 50px;
 }
 
+#functionalDesign:before {
+    content: "✅"
+}
+
 #gamification {
     top: 200px;
     left: 100px;
+}
+
+#gamification:before {
+    content: "🎮"
 }
 
 footer {
