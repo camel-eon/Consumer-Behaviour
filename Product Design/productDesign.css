@@ -72,7 +72,7 @@ main {
 /*font-size + line-height für GESAMTES Dokument ändern*/
 main section p {
     line-height: 1.3em;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /*für Bilder*/
@@ -85,7 +85,8 @@ section img{
 h1 {
     font-family: "Titan One";
     font-size: 2.7em;
-    text-align: center;
+    font-weight: 500;
+    text-align: left;
     border: 4px solid var(--border-color);
     width: fit-content;
     margin: auto;
@@ -182,6 +183,7 @@ li {
     display: inline-block;
     margin: auto;
     padding-bottom: 100px;
+    width: 100%;
 }
 
 /* Das Icon bei der Überschrift */
@@ -371,6 +373,7 @@ td {
     border: 4px solid var(--untertitel-color);
     border-radius: 35px;
     line-height: 1.3;
+    width: 50%;
 }
 
 
@@ -455,6 +458,7 @@ td {
     border: 4px solid var(--untertitel-color);
     border-radius: 35px;
     background-color: var(--inhalt-hintergrund-color);
+    text-align: left;
 }
 
 #references ul {
