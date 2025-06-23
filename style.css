@@ -95,7 +95,9 @@ main {
 .hero {
     background-image:
             linear-gradient(to bottom, rgba(194, 255, 254, 0.41), rgba(0, 131, 128, 0.41)),
-                        url("img/heroBackground.jpg");
+                        url("Design/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
