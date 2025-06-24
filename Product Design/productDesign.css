@@ -72,7 +72,7 @@ main {
 /*font-size + line-height für GESAMTES Dokument ändern*/
 main section p {
     line-height: 1.3em;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /*für Bilder*/
@@ -85,7 +85,8 @@ section img{
 h1 {
     font-family: "Titan One";
     font-size: 2.7em;
-    text-align: center;
+    font-weight: 500;
+    text-align: left;
     border: 4px solid var(--border-color);
     width: fit-content;
     margin: auto;
@@ -182,11 +183,12 @@ li {
     display: inline-block;
     margin: auto;
     padding-bottom: 100px;
+    width: 100%;
 }
 
 /* Das Icon bei der Überschrift */
 .h1Wrapper::before {
-    content: "🎮";
+    content: "🖌";
     font-size: 48px;
     width: 80px;
     height: 80px;
@@ -318,6 +320,32 @@ li {
     z-index: 0;
 }
 
+table {
+    border: 2px solid white;
+    border-radius: 30px;
+    border-collapse: collapse;
+    padding: 15px 45px;
+    color: white;
+}
+
+th {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: black;
+    background-color: var(--navbar-color);
+    padding: 20px 50px;
+}
+
+td {
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px 50px;
+    background-color: var(--untertitel-color);
+}
 
 /*STYLING FÜR BAUSTEIN: VERGLEICH*/
 .vergleichUeberschriftWrapper{
@@ -345,6 +373,7 @@ li {
     border: 4px solid var(--untertitel-color);
     border-radius: 35px;
     line-height: 1.3;
+    width: 50%;
 }
 
 
@@ -429,6 +458,12 @@ li {
     border: 4px solid var(--untertitel-color);
     border-radius: 35px;
     background-color: var(--inhalt-hintergrund-color);
+    text-align: left;
+}
+
+#references ul {
+    display: flex;
+    flex-direction: column;
 }
 
 #ersteller{
