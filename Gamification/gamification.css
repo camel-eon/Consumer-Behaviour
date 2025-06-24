@@ -4,4 +4,15 @@ section > h2:last-child {
 
 h1 {
   text-align: left;
+  width: 100%;
+  font-weight: 500;
+}
+
+.h1Wrapper {
+  width: 100%;
+}
+
+main section p {
+  line-height: 1.3em;
+  font-size: 1.2em;
 }
