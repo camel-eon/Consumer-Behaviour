@@ -1,3 +1,23 @@
+/* FONTS */
+@font-face {
+    font-family: Titan One;
+    src: url(../font/TitanOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Work SansB;
+    src: url(../font/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Work SansR;
+    src: url(../font/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Work SansM;
+    src: url(../font/WorkSans-Medium.ttf);
+}
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
