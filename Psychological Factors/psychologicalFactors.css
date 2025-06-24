@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#C2FFFF, #008380 41%);
+    color: #000000;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    left: 30px;
+    color: #FFFFFF;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #008380;
+    padding: 15px 0;
+    position: relative;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Header Box */
+.main-header {
+    text-align: center;
+    margin: 40px 60px 20px;
+    border-radius: 30px;
+    border: 2px solid #004F4D;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+.main-header-box h1 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+/* Section Box */
+.section {
+    margin: 40px 60px;
+    border-radius: 30px;
+    padding: 40px 30px;
+    border: 2px solid #004F4D;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.section-box h2 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #004F4D;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+    z-index: 10;
+}
+
+/* Questions Section Header */
+.questions-wrapper::before {
+    content: "Questions";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #004F4D;
+    color: white;
+    font-weight: bold;
+    padding: 8px 30px;
+    border-radius: 25px;
+    font-size: 1em;
+    border: 2px solid black;
+    z-index: 10;
+}
+
+/* Questions Container */
+.questions-wrapper {
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 30px;
+    border: 2px solid #004F4D;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 40px 60px 60px;
+    position: relative;
+}
+
+/* Bubbles - Left */
+.bubble-left {
+    align-self: flex-start;
+    background-color: #FFFFFF;
+    border-radius: 1.2em;
+    padding: 1em;
+    max-width: 70vw;
+    border: 2px solid #004F4D;
+    color: #004F4D;
+    font-weight: 500;
+
+    clip-path: polygon(0 0,100% 0,100% 100%,
+    1em 100%,
+    -0.7em calc(100% + 0.7em),
+    0 calc(100% - 1em));
+}
+
+/* Bubbles - Right */
+.bubble-right {
+    align-self: flex-end;
+    background-color: #FFFFFF;
+    border-radius: 1.2em;
+    padding: 1em;
+    max-width: 70vw;
+    border: 2px solid #004F4D;
+    color: #004F4D;
+    font-weight: 500;
+
+    clip-path: polygon(100% 0,0 0,0 100%,
+    calc(100% - 1em) 100%,
+    calc(100% + 0.7em) calc(100% + 0.7em),
+    100% calc(100% - 1em));
+}
+
+/* Comparison Title */
+.compare-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #004F4D;
+    color: white;
+    border: 2px solid black;
+    padding: 8px 30px;
+    width: fit-content;
+    margin: -20px auto 30px auto;
+    border-radius: 30px;
+}
+
+/* Comparison Blocks */
+.compare-blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.compare-box {
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid #004F4D;
+    padding: 15px;
+    min-height: 150px;
+    color: #000000;
+}
+
+/* Points List */
+.points-list {
+    margin-top: 10px;
+    padding-left: 40px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid #004F4D;
+    list-style-type: disc;
+}
+
+/* References Footer */
+.references {
+    background-color: #FFFFFF;
+    border-top: 2px solid #004F4D;
+    font-size: 0.9em;
+    margin-bottom: 60px;
+    color: #000000;
+}
+
+footer.references .section-box h2 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #004F4D;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+    z-index: 10;
+}
+
+footer.references .section-box {
+    position: relative;
+    border-radius: 30px;
+    border: 2px solid #004F4D;
+    padding: 30px;
+    background-color: #FFFFFF;
+    margin: 0 60px;
+}
+
+footer.references {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+}
+
+footer.references .section-box {
+    margin-bottom: 0 !important;
+    box-shadow: none !important;
+    background-color: white !important;
+}
