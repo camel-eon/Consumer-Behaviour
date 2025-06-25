@@ -87,7 +87,7 @@ h1 {
     font-size: 2.7em;
     text-align: left;
     border: 4px solid var(--border-color);
-    width: fit-content;
+    width: 100%;
     margin: auto;
     padding: 50px;
     border-radius: 35px;
@@ -180,6 +180,7 @@ li {
 /*STYLING TITEL + basedOn*/
 .h1Wrapper {
     position: relative;
+    width: 100%;
     display: inline-block;
     margin: auto;
     padding-bottom: 100px;
