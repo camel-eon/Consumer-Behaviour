@@ -441,7 +441,7 @@ li {
 /*STYLING FÜR BAUSTEIN: Conclusion*/
 .textFeldConclusionWrapper {
     display: flex;
-    justify-content: column;
+    justify-content: left;
     z-index: 0;
     position: relative;
     padding: 2em;
