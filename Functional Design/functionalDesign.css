@@ -72,7 +72,7 @@ main {
 /*font-size + line-height für GESAMTES Dokument ändern*/
 main section p {
     line-height: 1.3em;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /*für Bilder*/
@@ -85,13 +85,14 @@ section img{
 h1 {
     font-family: "Titan One";
     font-size: 2.7em;
-    text-align: center;
+    text-align: left;
     border: 4px solid var(--border-color);
     width: fit-content;
     margin: auto;
     padding: 50px;
     border-radius: 35px;
     background-color: var(--inhalt-hintergrund-color);
+    font-weight: 500;
 }
 
 h2{
@@ -204,14 +205,15 @@ li {
 /*Styling für das BasedOn im Titel drin: Name vom Originalen Paper*/
 .basedOn {
     position: absolute;
-    bottom: 10px;
+    bottom: -60px;
     right: -25px;
-    width: 40vw;
+    width: 35vw;
     background-color: var(--navbar-color);
     padding: 20px 20px;
     border: 4px solid var(--border-color);
     border-radius: 35px;
     font-size: 0.9em;
+   
 }
 
 .basedOn::after {
@@ -345,6 +347,7 @@ li {
     border: 4px solid var(--untertitel-color);
     border-radius: 35px;
     line-height: 1.3;
+    width: 50%;
 }
 
 
@@ -473,6 +476,7 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%
     }
 
     .h1Wrapper::before {
